@@ -6,7 +6,7 @@ Welcome to my #100Devs bootcamp repository! Join the community on [Twitch](https
 
 The master branch will have the most recent week's content, and it will be moved into another branch when it is time for the next session. If you want to see any of the older material, check out the branch you want to learn more about!
 
-- [Class 1]() - Learning How To Learn Development
+- [Class 1](https://github.com/jeffn12/100devs/tree/01-learningtolearn) - Learning How To Learn Development
 - [Class 2]() - Basic HTML
 
 #### Thanks
