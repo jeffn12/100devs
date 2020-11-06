@@ -1,7 +1,7 @@
 h1 {
   color: blue;
   text-decoration: underline;
-  background-color: gold;
+  background: gold;
 }
 
 h2 {
@@ -22,13 +22,13 @@ p {
 }
 
 footer {
-  background-color: black;
+  background: black;
   border: 3px dotted lightgreen;
 }
 
 section {
   width: 50%;
   height: 200px;
-  background-color: gray;
+  background: gray;
   border: 1px solid black;
 }
