@@ -38,7 +38,7 @@ a {
   color: #00cb9d;
 }
 
-a:first-of-type {
+nav a:first-of-type {
   color: white;
   text-decoration: none;
 }
@@ -47,6 +47,7 @@ h1 {
   font-family: serif;
   margin-top: 0px;
   font-style: italic;
+  font-weight: lighter;
 }
 
 h2 {
