@@ -8,7 +8,8 @@ The master branch will have the most recent week's content, and it will be moved
 
 - [Class 1](https://github.com/jeffn12/100devs/tree/01-learningtolearn) - Learning How To Learn Development
 - [Class 2](https://github.com/jeffn12/100devs/tree/02/basic-html) - Basic HTML
-- [Class 3]() - Basic CSS
+- [Class 3](https://github.com/jeffn12/100devs/tree/03/basic-css) - Basic CSS
+- [Class 4]() - More CSS
 
 #### Thanks
 
