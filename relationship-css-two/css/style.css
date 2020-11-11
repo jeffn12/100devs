@@ -1,8 +1,18 @@
 /* NO classes or IDs */
 /* Please Make only World and Zebra Blue */
-
+section > h2 {
+  color: blue;
+}
 /* Please Make only Zebra Purple */
-
+section > h2 + h2 {
+  color: purple;
+}
 /* Please Make only Hufflepuff Gold */
-
-/* Please keep Hufflepuff Gold and make ONLY Unicorn Gray  */
+article > h2 + h2 {
+  color: gold;
+}
+/* Please keep Hufflepuff Gold and make ONLY Unicorn Gray  
+    NOTE: you could also move this above the 'article > h2 + h2' selector to leverage the cascade */
+section article > h2:first-child {
+  color: gray;
+}
