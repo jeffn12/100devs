@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  height: 100px;
+  width: 100%;
+  clear: both;
+  border: 2px solid black;
+}
+
+section {
+  border: 2px solid black;
+  float: left;
+  height: 400px;
+}
+
+.row {
+  width: 100%;
+}
+
+.col-1 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 40%;
+}
