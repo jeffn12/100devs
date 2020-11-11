@@ -6,11 +6,19 @@
 #bestHouse {
   color: gold;
 }
-/* Please select Duck with the highest level of specificity possible */
-html body > article.areDucksDinosaurs h2.likesToQuack.fight1Or100 {
-  color: green;
+/* Please select Duck with the highest level of specificity possible 
+  NOTE: start at the element and work backwards/up
+*/
+html
+  body
+  h1#hi
+  + section.top
+  + section.middle
+  + article.areDucksDinosaurs
+  h2.likesToQuack.fight1Or100 {
+  color: green !important;
 }
 /* Please select Rhino with the highest level of specificity possible */
-html body section.top > h2#rhino.africa.fourLegs {
-  background-color: gray;
+html body h1#hi + section.top h2#rhino.africa.fourLegs:first-child {
+  background-color: gray !important;
 }
