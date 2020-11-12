@@ -1,29 +1,7 @@
-header li {
-  color: blue;
-  text-decoration: underline;
-  background: gray;
-  font-size: 15px;
-}
+/* Please make the anchor tags gold, 20px, and have a purple background */
 
-section {
-  height: 300px;
-  background: lavender;
-  border: 5px solid gold;
-}
+/* Please make the section have a height of 200px, a 10px thick blue border, and a light orange background */
 
-section h1 {
-  font-size: 30px;
-  color: gold;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
-}
+/* Please make the aside have a height of 300px, a thin red border, and a teal background  */
 
-footer {
-  background: #422518;
-  height: 300px;
-  width: 70%;
-}
-
-footer h2 {
-  text-decoration: line-through;
-}
+/* Please make the aside paragraph have white text, 18px, and a red underline */
