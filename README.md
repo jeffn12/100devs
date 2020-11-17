@@ -10,7 +10,8 @@ The master branch will have the most recent week's content, and it will be moved
 - [Class 2](https://github.com/jeffn12/100devs/tree/02/basic-html) - Basic HTML
 - [Class 3](https://github.com/jeffn12/100devs/tree/03/basic-css) - Basic CSS
 - [Class 4](https://github.com/jeffn12/100devs/tree/04/more-css) - More CSS
-- [Class 5]() - CSS Review & Pratice
+- [Class 5](https://github.com/jeffn12/100devs/tree/05/css-practice) - CSS Review & Practice
+- [Class 6]() - Responsive CSS Basics
 
 #### Thanks
 
