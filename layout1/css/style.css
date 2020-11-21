@@ -5,36 +5,47 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+html {
+  font-size: 62.5%;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
+body {
+  padding: 1rem;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-nav, main, aside {
+nav,
+main,
+aside {
   float: left;
+  padding: 0 1rem;
 }
 
 nav {
-  width: 10%;
+  width: 20%;
+  height: 150vh;
+  position: sticky;
+  left: 0;
+  top: 0;
 }
 
 main {
@@ -42,8 +53,46 @@ main {
 }
 
 aside {
-  width: 40%;
+  width: 30%;
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+:root {
+  --orange: rgb(243, 162, 0);
+  --gray: rgb(149, 149, 149);
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul a {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 300;
+}
+
+aside li {
+  border-bottom: 0.1rem solid var(--gray);
+}
+
+body > section {
+  clear: right;
+}
+
+.headline {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
