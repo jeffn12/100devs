@@ -55,6 +55,7 @@ main {
 aside {
   width: 30%;
 }
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -69,8 +70,21 @@ a {
   color: var(--gray);
 }
 
+h2,
+h4 {
+  color: var(--orange);
+}
+
 p {
   margin: 0;
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+span {
+  display: block;
+  margin: 0.8rem 0;
+  font-size: 0.5rem;
 }
 
 ul {
@@ -79,12 +93,13 @@ ul {
 }
 
 ul a {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
   font-weight: 300;
 }
 
 aside li {
+  margin: 1rem 0;
   border-bottom: 0.1rem solid var(--gray);
 }
 
@@ -92,7 +107,13 @@ body > section {
   clear: right;
 }
 
+body > section > *:not(:first-child) {
+  width: 26.6666%;
+  float: left;
+}
+
 .headline {
   font-size: 1.5rem;
   font-weight: 900;
+  color: black;
 }
