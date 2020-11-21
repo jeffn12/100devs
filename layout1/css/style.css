@@ -28,6 +28,7 @@ html {
 
 body {
   padding: 1rem;
+  padding-left: 20%;
 }
 
 /******************************************
@@ -42,14 +43,13 @@ aside {
 
 nav {
   width: 20%;
-  height: 150vh;
-  position: sticky;
+  position: fixed;
   left: 0;
-  top: 0;
+  top: 1rem;
 }
 
 main {
-  width: 50%;
+  width: 70%;
 }
 
 aside {
@@ -70,9 +70,20 @@ a {
   color: var(--gray);
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
 h2,
 h4 {
   color: var(--orange);
+  margin: 0.5rem 0;
+}
+
+h3 {
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid var(--gray);
 }
 
 p {
@@ -92,9 +103,14 @@ ul {
   padding: 0;
 }
 
+li {
+  margin: 0;
+  padding: 0;
+}
+
 ul a {
   font-size: 1.5rem;
-  line-height: 2.2rem;
+  line-height: 2.5rem;
   font-weight: 300;
 }
 
@@ -108,12 +124,20 @@ body > section {
 }
 
 body > section > *:not(:first-child) {
-  width: 26.6666%;
+  width: 30%;
   float: left;
+}
+
+body > section > p {
+  margin: 0 1.5%;
 }
 
 .headline {
   font-size: 1.5rem;
   font-weight: 900;
   color: black;
+}
+
+aside li:nth-child(2) .headline {
+  color: var(--gray);
 }
