@@ -26,7 +26,7 @@
 
 body {
   font-size: 62.5%;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 /******************************************
@@ -34,7 +34,7 @@ body {
 /*******************************************/
 header {
   width: 80%;
-  height: 2rem;
+  height: 3.8rem;
   margin: 0 auto;
   position: fixed;
   top: 0;
@@ -45,6 +45,10 @@ header {
 header > * {
   float: left;
   width: 33.3333%;
+}
+
+header > form {
+  padding: 0.5rem 0;
 }
 
 main {
@@ -65,27 +69,6 @@ header *,
   color: var(--blue);
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  width: 33.3333%;
-  float: left;
-  text-align: center;
-}
-
-main li {
-  display: inline-block;
-  background: var(--blue);
-  margin: 0 1%;
-  padding: 0.5rem;
-}
-
 select,
 input {
   border: none;
@@ -96,4 +79,34 @@ input {
   padding: 0.3rem;
   margin: 0 0.5rem;
   border-radius: 0.2rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  width: 33.3333%;
+  float: left;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+main li {
+  width: 21%;
+  margin: 1%;
+}
+
+main li > a {
+  display: inline-block;
+  background: var(--blue);
+  width: 100%;
+  padding: 0.5rem 10%;
+  border-radius: 0.2rem;
+  color: white;
 }
