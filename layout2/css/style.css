@@ -5,38 +5,95 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
-
+:root {
+  --blue: rgb(52, 106, 239);
 }
 
+body {
+  font-size: 62.5%;
+  margin-top: 4rem;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
+  width: 80%;
+  height: 2rem;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 10%;
+  padding: 0.5rem 0;
 }
 
-footer {
-
+header > * {
+  float: left;
+  width: 33.3333%;
 }
 
+main {
+  width: 75%;
+  margin: auto;
+  clear: both;
+}
+
+main > * {
+  width: 50%;
+  float: left;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+header *,
+::placeholder {
+  color: var(--blue);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  width: 33.3333%;
+  float: left;
+  text-align: center;
+}
+
+main li {
+  display: inline-block;
+  background: var(--blue);
+  margin: 0 1%;
+  padding: 0.5rem;
+}
+
+select,
+input {
+  border: none;
+}
+
+input {
+  background: rgb(240, 241, 242);
+  padding: 0.3rem;
+  margin: 0 0.5rem;
+  border-radius: 0.2rem;
+}
