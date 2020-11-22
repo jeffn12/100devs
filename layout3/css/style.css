@@ -1,6 +1,8 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Clear fix hack */
@@ -91,3 +93,19 @@ nav form input {
   background: white;
   border-left: 0.1rem solid white;
 }
+
+/* Main */
+
+main > section > div {
+  margin: 2rem 0 1rem 0;
+}
+main > section > div h1 {
+  display: inline;
+  font-size: 2rem;
+}
+main > section > div time {
+  float: right;
+  font-size: 2rem;
+}
+
+/* Headlines */
