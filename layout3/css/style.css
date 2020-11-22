@@ -5,36 +5,40 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+html {
+  font-size: 62.5%;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+nav {
+  width: 100%;
+  height: auto;
+}
+nav * {
+  float: left;
+  margin: auto;
 }
 
-footer {
-
+header {
+  clear: both;
 }
 
 /******************************************
