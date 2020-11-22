@@ -28,19 +28,66 @@ html {
 /******************************************
 /* LAYOUT
 /*******************************************/
+header,
 nav {
   width: 100%;
-  height: auto;
-}
-nav * {
-  float: left;
-  margin: auto;
+  height: 4rem;
+  background: black;
 }
 
-header {
+nav * {
+  float: left;
+  color: white;
+  font-size: 1.4rem;
+}
+
+main {
   clear: both;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+a {
+  text-decoration: none;
+}
+/* Navbar */
+nav > * {
+  width: 12.5%;
+}
+
+nav ul {
+  width: 50%;
+  list-style: none;
+  margin: auto;
+}
+
+nav li {
+  height: 4rem;
+  width: 12%;
+  padding: 1.3rem 1rem;
+  border-left: 0.1rem solid white;
+}
+
+nav form {
+  width: 25%;
+}
+
+nav form select {
+  height: 4rem;
+  width: 40%;
+  background: black;
+  padding: 0 1.3rem;
+  border: 0;
+  border-left: 0.1rem solid white;
+  border-right: 0.1rem solid white;
+  margin-right: 1.5rem;
+}
+
+nav form input {
+  height: 3.5rem;
+  width: 50%;
+  margin-top: 0.2rem;
+  background: white;
+  border-left: 0.1rem solid white;
+}
