@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Clear fix hack */
@@ -29,6 +30,12 @@ html {
 
 a {
   text-decoration: none;
+}
+
+img {
+  width: 99%;
+  height: auto;
+  margin: 0;
 }
 
 /******************************************
@@ -87,6 +94,7 @@ main {
   clear: both;
   margin: 0.5rem;
 }
+
 main > section > div {
   margin: 2rem 0 1rem 0;
 }
@@ -100,21 +108,56 @@ main > section > div time {
 }
 
 /**************** Headlines ***************/
+#headlines {
+  height: 100%;
+}
 #headlines > *,
 #headlines article {
-  width: 50%;
+  width: 49%;
   float: left;
 }
+#headlines > div article {
+  margin: 0.3%;
+  padding: 0;
+  width: 49%;
+}
+#headlines article {
+  position: relative;
+  height: 100%;
+}
 
+#headlines article > div {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+}
+#headlines article > div * {
+  margin: 1rem 0;
+}
+#headlines h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+#main-article {
+  margin-right: 2%;
+}
+#main-article h3 {
+  font-size: 2.5rem;
+}
+#main-article p {
+  font-size: 1.2rem;
+}
 /**************** News ***************/
 #news {
   clear: both;
+  height: auto;
 }
 #news h2 {
   font-size: 2rem;
 }
 #news h2,
-#news span {
+span {
   padding-left: 1rem;
   margin: 1rem 0;
   border-left: 0.3rem solid red;
@@ -125,10 +168,6 @@ main > section > div time {
 }
 #news article:nth-of-type(2) {
   margin: 0 2%;
-}
-#news img {
-  width: 100%;
-  height: auto;
 }
 #news h3 {
   font-size: 2rem;
