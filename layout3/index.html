@@ -1,19 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-  	<meta charset="utf-8">
-  	<meta name="description" content="Your description goes here">
-  	<meta name="keywords" content="one, two, three">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<title>Blank Template</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
+    <title>Blank Template</title>
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="bbclogo" alt="BBC" />
+      <a href="#"><img src="avatar" alt="user avatar" />Sign in</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Sport</a></li>
+        <li><a href="#">Reel</a></li>
+        <li><a href="#">Worklife</a></li>
+        <li><a href="#">Travel</a></li>
+        <li><a href="#">Future</a></li>
+        <li><a href="#">Culture</a></li>
+        <li>
+          <label for="navlinks">More</label>
+          <select name="navlinks">
+            <option value="More">More</option>
+          </select>
+        </li>
+      </ul>
+      <input type="text" placeholder="Search" />
+      <img src="magnifying_glass" alt="" />
+      <!-- will be placed within the input box (CSS) -->
+    </nav>
+    <header>
+      <h1>Welcome to BBC.com</h1>
+      <span>Thursday, 13 August</span>
+      <section id="headlines">
+        <article id="1">
+          <!-- add image to background (CSS) -->
+          <h3>Israel and UAE strike historic peace deal</h3>
+          <p>
+            Israel and the UAE agree to normalise relations, making the third
+            Israel-Arab peace deal.
+          </p>
+          <span>MIDDLE EAST</span>
+        </article>
+        <article>
+          <h3>Americans, go home: Tension at Canada-US border</h3>
+          <span>CANADA</span>
+        </article>
+        <article>
+          <h3>How will the world vaccinate seven billion people?</h3>
+          <span>HEALTH</span>
+        </article>
+        <article>
+          <h3>The online 'productivity gyms'</h3>
+          <span>WORKLIFE</span>
+        </article>
+        <article>
+          <h3>The folk singer murdered for his music</h3>
+          <span>CULTURE</span>
+        </article>
+      </section>
+    </header>
+    <section id="news">
+      <h2>News</h2>
+      <article>
+        <img
+          src=""
+          alt="Kamala Harris and Joe Biden are facing each other with smiles"
+        />
+        <h3>Biden and harris say Trump has left US 'in tatters'</h3>
+        <p>
+          Joe Biden and running mate Kamala Harris call President Donald Trump a
+          "whining" incompetent leader.
+        </p>
+        <span>US ELECTION 2020</span>
+      </article>
+      <article>
+        <img
+          src=""
+          alt="Woman holding up 'peace sign' with her fingers stands in front of a group of others doing the same"
+        />
+        <h3>Women form 'solidarity chains' in Belarus protests</h3>
+        <p>
+          Women take to the streets of Minsk dressed in white as they demand an
+          end to police brutality.
+        </p>
+        <span>EUROPE</span>
+      </article>
+      <article>
+        <img src="" alt="Donald Trump's head with wind blowing his hair" />
+        <h3>Trump says low-pressure shower heads won't wash</h3>
+        <p>
+          The US calls for rules to be eased after Donald Trump complained of
+          issues washing his hair.
+        </p>
+        <span>US & CANADA</span>
+      </article>
+    </section>
+  </body>
 </html>
