@@ -20,19 +20,86 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
-
+html {
+  font-size: 62.5%;
+}
+:root {
+  --navy: rgb(102, 118, 138);
+  --lightgray: rgb(219, 223, 226);
+}
+ul {
+  list-style: none;
+}
 /******************************************
-/* LAYOUT
+/* Header
 /*******************************************/
 header {
+  padding: 1rem 3rem;
+  background: var(--navy);
+  color: rgb(241, 241, 241);
+  text-align: center;
 }
-
-footer {
+header a {
+  color: rgb(241, 241, 241);
+  text-decoration: none;
 }
-
+nav * {
+  display: inline;
+}
+nav li {
+  display: inline;
+  margin: 0.9rem 0.75rem;
+  float: left;
+  font-size: 1.2rem;
+}
+nav img {
+  width: 3rem;
+  height: auto;
+}
+nav button {
+  padding: 1rem;
+  background: rgb(241, 241, 241);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--navy);
+  font-weight: 700;
+  float: right;
+}
+header h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  clear: both;
+}
+header p {
+  width: 55%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+header > a {
+  margin: 2rem 0;
+  display: block;
+  font-size: 1.2rem;
+}
+header i {
+  margin: 1rem 1rem 1rem 0;
+}
+header > span {
+  display: block;
+  margin: 4rem 0 1rem 0;
+  font-size: 0.8rem;
+  color: rgb(22, 31, 42);
+  font-style: italic;
+}
 /******************************************
-/* ADDITIONAL STYLES
+/* Footer
 /*******************************************/
+footer {
+  background: rgb(22, 31, 42);
+  color: rgb(241, 241, 241);
+}
