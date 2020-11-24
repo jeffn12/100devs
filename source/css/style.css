@@ -95,7 +95,7 @@ main {
 }
 #call-to-action-section span {
   font-weight: 700;
-  color: var(--darkgray);
+  color: rgb(197, 208, 216);
 }
 #call-to-action-section h1 {
   width: 70%;
@@ -129,12 +129,12 @@ main > img {
 /******************/
 #features-section {
   clear: both;
-  padding-top: 10rem;
+  padding: 10rem 0;
 }
 #features-section > section {
   width: 25%;
   float: left;
-  padding: 0 2rem;
+  padding: 0 2rem 5rem 0;
 }
 #features-section img {
   display: inline-block;
@@ -154,4 +154,33 @@ main > img {
 }
 #features-section a {
   font-weight: 700;
+}
+/******************
+/* Process 
+/******************/
+#process-section {
+  clear: both;
+  position: relative;
+  left: -5rem;
+  width: calc(100% + 10rem);
+  padding: 3rem 5rem;
+  background: white;
+}
+#process-section h2 {
+  width: 50%;
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 600;
+}
+#process-section p {
+  width: 55%;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgb(197, 208, 216);
+}
+#process-section div {
+  width: 100%;
+  height: 40rem;
+  margin: 4rem 0;
+  background: var(--darkgray);
 }
