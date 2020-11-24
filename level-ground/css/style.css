@@ -133,11 +133,16 @@ main > section p {
 img[src="gray_background.png"] {
   filter: blur(0.09rem);
 }
-#services-section button {
+
+main button {
   margin: 1.3rem;
   padding: 1rem 3rem;
   background: transparent;
   border: 0.1rem solid rgb(151, 151, 151);
+}
+
+#volunteer-section p {
+  width: 40%;
 }
 /******************************************
 /* Footer
