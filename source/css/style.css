@@ -86,6 +86,9 @@ nav button {
 main {
   position: relative;
 }
+/******************
+/* Call to Action
+/******************/
 #call-to-action-section {
   width: 50%;
   float: left;
@@ -121,7 +124,34 @@ main > img {
   height: auto;
   max-height: 37rem;
 }
+/******************
+/* Features
+/******************/
 #features-section {
   clear: both;
   padding-top: 10rem;
+}
+#features-section > section {
+  width: 25%;
+  float: left;
+  padding: 0 2rem;
+}
+#features-section img {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid var(--darknavy);
+  margin: 2rem 0;
+}
+#features-section h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+#features-section p {
+  font-size: 1.1rem;
+}
+#features-section a {
+  font-weight: 700;
 }
