@@ -1,8 +1,3 @@
-/* Box Model Hack */
-* {
-  box-sizing: border-box;
-}
-
 /* Clear fix hack */
 .clearfix:after {
   content: ".";
@@ -21,9 +16,12 @@
 /* BASE STYLES
 /*******************************************/
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: rgb(22, 31, 42);
 }
 html {
   font-size: 62.5%;
@@ -41,11 +39,8 @@ ul {
 header {
   padding: 1rem 3rem;
   background: var(--navy);
-  color: rgb(241, 241, 241);
-  text-align: center;
 }
 header a {
-  color: rgb(241, 241, 241);
   text-decoration: none;
 }
 nav * {
@@ -69,6 +64,9 @@ nav button {
   color: var(--navy);
   font-weight: 700;
   float: right;
+}
+header * {
+  color: rgb(241, 241, 241);
 }
 header h1 {
   font-size: 5rem;
@@ -96,10 +94,57 @@ header > span {
   color: rgb(22, 31, 42);
   font-style: italic;
 }
+
+/******************************************
+/* Main
+/*******************************************/
+main > section {
+  padding: 7rem 0;
+}
+main > section h2 {
+  font-size: 2.5rem;
+}
+main > section p {
+  width: 25%;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  color: rgb(22, 31, 42);
+  font-weight: 200;
+  line-height: 1.5rem;
+}
+
+#services-section {
+  background-color: var(--lightgray);
+}
+#services-section > section {
+  display: inline-block;
+  width: 25%;
+  margin: 0 0.5rem;
+}
+#services-section > section h4 {
+  font-size: 1.3rem;
+  margin: 1.3rem 0;
+}
+#services-section > section p {
+  margin: auto;
+  padding: 0;
+  width: 95%;
+}
+img[src="gray_background.png"] {
+  filter: blur(0.09rem);
+}
+#services-section button {
+  margin: 1.3rem;
+  padding: 1rem 3rem;
+  background: transparent;
+  border: 0.1rem solid rgb(151, 151, 151);
+}
 /******************************************
 /* Footer
 /*******************************************/
 footer {
   background: rgb(22, 31, 42);
+}
+footer * {
   color: rgb(241, 241, 241);
 }
