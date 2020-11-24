@@ -1,42 +1,49 @@
 /* Box Model Hack */
 * {
-     -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+:root {
+  --lightgray: rgb(245, 249, 252);
+  --darkgray: rgb(225, 233, 240);
+  --darknavy: rgb(48, 70, 89);
+}
+html {
+  font-size: 62.5%;
+}
 body {
-
+  padding: 5rem 10rem;
+  background: var(--lightgray);
+  color: var(--darknavy);
 }
 
-
 /******************************************
-/* LAYOUT
+/* Nav
 /*******************************************/
-header {
-
+nav {
+  width: 100%;
+  text-align: center;
 }
-
-footer {
-
+nav * {
+  display: inline;
 }
-
-/******************************************
+/*********************
 /* ADDITIONAL STYLES
-/*******************************************/
+/********************/
