@@ -33,6 +33,19 @@ html {
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
+li {
+  display: inline;
+  margin: 0.9rem 0.75rem;
+  float: left;
+  font-size: 1.2rem;
+}
+img[src="lg_logo_white.png"] {
+  width: 3rem;
+  height: auto;
+}
 /******************************************
 /* Header
 /*******************************************/
@@ -40,21 +53,8 @@ header {
   padding: 1rem 3rem;
   background: var(--navy);
 }
-header a {
-  text-decoration: none;
-}
 nav * {
   display: inline;
-}
-nav li {
-  display: inline;
-  margin: 0.9rem 0.75rem;
-  float: left;
-  font-size: 1.2rem;
-}
-nav img {
-  width: 3rem;
-  height: auto;
 }
 nav button {
   padding: 1rem;
@@ -149,7 +149,71 @@ main button {
 /*******************************************/
 footer {
   background: rgb(22, 31, 42);
+  position: relative;
+  padding: 0 1.4rem;
 }
 footer * {
   color: rgb(241, 241, 241);
+}
+footer > section {
+  display: inline;
+}
+footer a {
+  float: left;
+}
+.social-logo {
+  width: 2rem;
+  height: auto;
+  margin: 1.5rem 0.7rem;
+}
+footer > section > section + section {
+  margin: 4.5rem 0 0 0;
+}
+footer h5 {
+  display: block;
+  margin: 0 0.7rem;
+  text-align: start;
+  font-size: 1rem;
+  color: rgb(102, 118, 138);
+  clear: both;
+}
+footer li {
+  text-decoration: none;
+  display: inline;
+}
+#address-section {
+  position: absolute;
+  right: 3rem;
+  top: 15%;
+  line-height: 1.5rem;
+}
+
+footer span {
+  display: block;
+  text-align: start;
+  font-style: normal;
+}
+address {
+  margin-top: 1rem;
+}
+address span {
+  font-weight: 200;
+}
+address span a[href^="mailto"] {
+  font-weight: 700;
+}
+footer div {
+  border-top: 0.2rem solid rgb(102, 118, 138);
+  margin: 4rem 0.7rem 0 0.7rem;
+  height: 4rem;
+}
+footer div p {
+  margin: 1rem 0;
+  display: inline;
+  float: left;
+  text-align: start;
+}
+footer div img {
+  float: right;
+  margin-top: 0.25rem;
 }
