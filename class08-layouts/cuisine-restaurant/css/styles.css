@@ -50,6 +50,7 @@ a {
 /* Header
 /*******************************************/
 header {
+  padding: 0 5rem;
   background: linear-gradient(
     to top right,
     rgb(219, 229, 234),
@@ -58,11 +59,8 @@ header {
 }
 /*** NavBar ***/
 nav {
-  width: 100%;
   height: 4rem;
-  padding: 0 4rem;
-  position: fixed;
-  top: 0;
+
   text-align: right;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
@@ -75,7 +73,12 @@ nav img[src="cuisine_logo"] {
 }
 nav ul {
   margin: 0;
-  padding: 0 1rem;
+}
+nav li {
+  padding: 0 1.5rem;
+}
+nav li i {
+  font-size: 1.4rem;
 }
 nav a {
   font-size: 1rem;
@@ -85,7 +88,7 @@ nav a {
 
 /*** Welcome ***/
 #welcome {
-  padding: 6rem 4rem;
+  padding: 6rem 0;
   width: 66.666%;
 }
 #welcome h1 {
@@ -138,5 +141,53 @@ nav a {
   color: var(--darkorange);
 }
 /******************************************
-/* NavBar
-/*******************************************/ ;
+/* Main
+/*******************************************/
+main {
+  width: 100%;
+  padding: 0 4rem;
+}
+
+/*** About Us ***/
+#about-us {
+  padding: 4rem 0;
+}
+#about-us > div {
+  width: 50%;
+  float: right;
+  margin-right: 12rem;
+}
+#about-us h2 {
+  font-size: 3.5rem;
+}
+#about-us p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+#about-us p:nth-child(2) {
+  margin: 2rem 0;
+}
+#about-us button {
+  width: 25%;
+  height: 3rem;
+  margin: 2rem 0;
+  background: var(--darkorange);
+  color: white;
+  box-shadow: 0 0 0.2rem orange;
+  border: 1px solid orange;
+  border-radius: 0.5rem 0 0 0.5rem;
+  position: relative;
+}
+#about-us button:after {
+  content: "\279e";
+  padding: 1rem 0.75rem;
+  background: var(--lightorange);
+  border: 1px solid var(--lightorange);
+  box-shadow: 0 0 0.2rem var(--lightorange);
+  border-radius: 0 0.5rem 0.5rem 0;
+  position: absolute;
+  right: -25%;
+  top: -0.1rem;
+  bottom: -0.1rem;
+  z-index: -1;
+}
