@@ -16,6 +16,10 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ad855f334f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -39,20 +43,33 @@
         <ul>
           <li><a href="#">Location</a></li>
         </ul>
-        <img src="shopping_cart" alt="cart" />
-        <img src="magnifying_glass" alt="magnifying glass" />
+        <ul>
+          <li>
+            <a href="#"><img src="shopping_cart" alt="cart" /></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="magnifying_glass" alt="magnifying glass"
+            /></a>
+          </li>
+        </ul>
       </nav>
       <section id="welcome">
         <h1>Welcome<br />To Our Cuisine Restaurant</h1>
         <form>
-          <input />
+          <div class="relative-container">
+            <i class="fas fa-search"></i>
+            <input placeholder="Search here" />
+          </div>
           <button>Location</button>
           <!-- dropdown to select location? -->
         </form>
-        <section>
-          <div><img src="facebook_icon" alt="" /><span>252k</span></div>
-          <div><img src="twitter_icon" alt="" /><span>62k</span></div>
-          <div><img src="instagram_icon" alt="" /><span>55k</span></div>
+        <section id="socials" class="clearfix">
+          <span><i class="fab fa-facebook-f"></i>252k</span>
+          <span><i class="fab fa-twitter"></i>62k</span>
+          <span><i class="fab fa-instagram"></i>55k</span>
         </section>
       </section>
     </header>
