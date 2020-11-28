@@ -217,14 +217,15 @@ main {
 }
 #order-online h2 {
   font-size: 4rem;
+  margin-bottom: 2rem;
 }
 #menu-list {
   width: 75%;
-  margin: auto;
+  margin: 0 auto 3rem auto;
 }
 #menu-list li {
   display: inline;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   border-bottom: 0.1rem solid gray;
   font-size: 1.2rem;
 }
@@ -240,4 +241,28 @@ main {
 }
 #menu-list li.active a {
   color: var(--darkorange);
+}
+#menu-items img {
+  width: 25%;
+  height: auto;
+  padding: 1.5rem;
+  float: left;
+}
+.selectors {
+  margin-top: 2rem;
+}
+.selectors span.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgb(240, 201, 151);
+}
+.selectors span.dot.active {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0.25rem 0.5rem;
+  box-shadow: 0 0 0.5rem var(--darkorange);
+  background: var(--darkorange);
 }
