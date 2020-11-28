@@ -266,3 +266,54 @@ main {
   box-shadow: 0 0 0.5rem var(--darkorange);
   background: var(--darkorange);
 }
+
+/*** Book Table ***/
+#book-table {
+  text-align: center;
+  padding: 4rem;
+}
+#book-table * {
+  margin: 1rem 0;
+}
+#book-table h2 {
+  margin: 3rem;
+  font-size: 4rem;
+}
+#book-table i {
+  font-size: 2.5rem;
+  padding: 1rem;
+  color: var(--darkorange);
+  border-radius: 50%;
+  border: 0.1rem solid var(--lightorange);
+}
+#book-table span,
+#book-table a {
+  display: block;
+}
+#book-table a {
+  color: var(--darkorange);
+  font-size: 2rem;
+}
+#book-table div#hours {
+  width: 66.666%;
+  margin: 0 auto 2rem auto;
+}
+#book-table div#hours div {
+  width: 50%;
+  float: left;
+  padding: 0 5rem;
+  text-align: left;
+}
+div#hours span {
+  font-size: 1.1rem;
+}
+div#hours time {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+div#video {
+  width: 66.666%;
+  margin: auto;
+  height: 30rem;
+  background-color: crimson;
+}
