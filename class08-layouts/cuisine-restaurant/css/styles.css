@@ -336,6 +336,25 @@ div#video {
 #testimonials {
   text-align: center;
   padding: 4rem;
+  position: relative;
+  margin-bottom: 0;
+}
+#testimonials:before {
+  content: '"';
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 70rem;
+  overflow: hidden;
+  color: rgb(247, 247, 248);
+  font-family: cursive;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("https://images.unsplash.com/photo-1530842128367-9e448d986a75?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80");
+  background: linear-gradient(to right, rgb(219, 225, 231), white 15%);
 }
 #testimonials h2 {
   font-size: 4rem;
