@@ -271,6 +271,20 @@ main {
 #book-table {
   text-align: center;
   padding: 4rem;
+  position: relative;
+}
+#book-table:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url("https://images.unsplash.com/photo-1590147540852-8698a2a7f742?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=633&q=80")
+    center center no-repeat;
+  background-size: cover;
+  opacity: 0.2;
 }
 #book-table * {
   margin: 1rem 0;
@@ -316,4 +330,41 @@ div#video {
   margin: auto;
   height: 30rem;
   background-color: crimson;
+}
+
+/*** Testimonials ***/
+#testimonials {
+  text-align: center;
+  padding: 4rem;
+}
+#testimonials h2 {
+  font-size: 4rem;
+}
+#testimonials img {
+  display: block;
+  margin: 1rem auto;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+#testimonials span:not(.dot) {
+  display: block;
+}
+#testimonials .name {
+  font-size: 2rem;
+}
+#testimonials .title {
+  font-size: 1.1rem;
+  color: gray;
+}
+#testimonials p {
+  margin: 0;
+  font-style: italic;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+}
+div#rating i {
+  margin: 2rem 0.25rem;
+  font-size: 1.5rem;
+  color: gold;
 }
