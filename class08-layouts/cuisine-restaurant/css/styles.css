@@ -162,6 +162,25 @@ main {
 /*** About Us ***/
 #about-us {
   padding: 4rem 0;
+  position: relative;
+}
+#about-us:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+      to right,
+      transparent,
+      white 40%,
+      white 80%,
+      transparent
+    ),
+    url("https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1047&q=80");
+  background-size: cover;
 }
 #about-us > div {
   width: 50%;
