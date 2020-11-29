@@ -328,7 +328,7 @@ main {
   font-size: 2rem;
 }
 #book-table div#hours {
-  width: 66.666%;
+  width: 70%;
   margin: 0 auto 2rem auto;
 }
 #book-table div#hours div {
@@ -341,14 +341,31 @@ div#hours span {
   font-size: 1.1rem;
 }
 div#hours time {
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
   font-size: 1.5rem;
   font-weight: bold;
 }
 div#video {
-  width: 66.666%;
+  position: relative;
+  width: 90%;
   margin: auto;
-  height: 30rem;
-  background-color: crimson;
+}
+div#video i {
+  position: absolute;
+  font-size: 1.5rem;
+  padding: 1rem 1.4rem;
+  top: calc(50% - 2.5rem);
+}
+div#video i.fas.fa-angle-left {
+  left: 0;
+}
+div#video i.fas.fa-angle-right {
+  right: 0;
+}
+div#video video {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
 }
 
 /*** Testimonials ***/
