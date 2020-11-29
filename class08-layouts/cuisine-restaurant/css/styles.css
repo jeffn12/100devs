@@ -64,8 +64,10 @@ header::before {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=931&q=80");
+  background: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=931&q=80")
+    0 0 no-repeat;
   transform: rotateY(180deg);
+  background-size: cover;
 }
 /*** NavBar ***/
 nav {
@@ -159,10 +161,20 @@ nav a {
 main {
   width: 100%;
 }
+main section {
+  padding: 8rem 4rem 4rem 4rem;
+}
+main h2 {
+  margin-top: 0;
+}
+span.section-title {
+  color: var(--darkorange);
+  font-size: 1.5rem;
+}
 /*** About Us ***/
 #about-us {
-  padding: 4rem 0;
   position: relative;
+  padding-bottom: 8rem;
 }
 #about-us:before {
   content: "";
@@ -225,13 +237,8 @@ main {
 
 /*** Order Online ***/
 #order-online {
-  padding: 4rem;
   width: 100%;
-  background: linear-gradient(
-    to top right,
-    rgb(219, 229, 234),
-    rgb(243, 249, 249)
-  );
+  background: linear-gradient(to top right, rgb(219, 229, 234), white);
   text-align: center;
 }
 #order-online h2 {
@@ -289,8 +296,8 @@ main {
 /*** Book Table ***/
 #book-table {
   text-align: center;
-  padding: 4rem;
   position: relative;
+  padding-bottom: 8rem;
 }
 #book-table:before {
   content: "";
@@ -309,7 +316,7 @@ main {
   margin: 1rem 0;
 }
 #book-table h2 {
-  margin: 3rem;
+  margin-bottom: 3rem;
   font-size: 4rem;
 }
 #book-table i {
@@ -328,14 +335,18 @@ main {
   font-size: 2rem;
 }
 #book-table div#hours {
-  width: 70%;
+  width: 60%;
   margin: 0 auto 2rem auto;
 }
 #book-table div#hours div {
-  width: 50%;
+  width: 40%;
   float: left;
-  padding: 0 5rem;
   text-align: left;
+  padding: 0 5rem;
+}
+#book-table div#hours div:nth-child(2) {
+  float: right;
+  padding-right: 0rem;
 }
 div#hours span {
   font-size: 1.1rem;
@@ -371,7 +382,6 @@ div#video video {
 /*** Testimonials ***/
 #testimonials {
   text-align: center;
-  padding: 4rem;
   position: relative;
   margin-bottom: 0;
 }
