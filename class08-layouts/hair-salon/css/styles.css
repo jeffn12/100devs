@@ -24,7 +24,53 @@
 html {
   font-size: 62.5%;
 }
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /******************************************
-/* LAYOUT
+/* Header
 /*******************************************/
+header {
+  height: 4rem;
+  padding: 0 5rem;
+  line-height: 4rem;
+  text-align: center;
+  background: white;
+  font-family: "Cinzel", serif;
+}
+header img {
+  float: left;
+}
+header a {
+  color: black;
+}
+header li {
+  padding: 0 1rem;
+}
+header button {
+  line-height: 2rem;
+  float: right;
+}
+
+/******************************************
+/* Utility Classes
+/*******************************************/
+.inline {
+  display: inline;
+}
+.btn {
+  border: 0;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.btn-white {
+  background: white;
+  color: black;
+  font-family: "Cinzel", serif;
+}
