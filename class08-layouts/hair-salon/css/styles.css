@@ -37,14 +37,14 @@ ul {
   padding: 0;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: 400;
   margin: 0;
 }
 h3 {
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 0;
+  margin: 1rem 0;
 }
 /******************************************
 /* Header
@@ -66,7 +66,7 @@ header li {
   padding: 0 1rem;
 }
 header button {
-  line-height: 2rem;
+  line-height: 1rem;
   float: right;
 }
 
@@ -75,33 +75,44 @@ header button {
 /*******************************************/
 #top-section {
   position: relative;
-  background: black;
   color: white;
-  padding: 14rem 0 0 10rem;
+  padding: 14rem 0 4rem 10rem;
+  background: url("https://media.discordapp.net/attachments/769333550008369182/782291098680426516/salon-main-img.jpg?width=705&height=518")
+    center center no-repeat;
+  background-size: cover;
 }
-#top-section > div {
+#top-section > section {
+  margin-top: 10rem;
+}
+#top-section div {
   width: 50%;
   margin: 3rem 0;
-  padding: 3rem 0;
+  padding: 1rem 0;
+}
+#top-section .btn {
+  margin: 2.5rem 0rem;
 }
 #top-section .vertical-text {
   position: absolute;
   right: -4.5rem;
   top: 40%;
   transform: rotateZ(90deg);
+  font-size: 1.4rem;
 }
 #top-section .coupon {
-  width: 25%;
-  background: purple;
+  width: 20%;
+  background: black;
   padding: 1rem 0;
+  margin-bottom: 5rem;
 }
 .coupon h4 {
   border-left: 3px solid white;
   padding: 2rem;
-  margin: 0;
+  margin: 1rem 0;
+  font-size: 1.2rem;
 }
-#top-section .btn {
-  margin: 2rem 2rem;
+#top-section .coupon .btn {
+  margin-left: 2rem;
 }
 
 /******************************************
@@ -248,7 +259,8 @@ header button {
 }
 .btn {
   border: 0;
-  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  padding: 1.5rem 3rem;
   cursor: pointer;
 }
 .btn-white {
@@ -266,7 +278,7 @@ header button {
 }
 .coupon p {
   font-family: "Cinzel", serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 0 2rem;
   margin: 0;
   line-height: 3rem;
@@ -275,6 +287,32 @@ header button {
 /******************************************
 /* Mobile Responsiveness
 /*******************************************/
+
+@media screen and (max-width: 800px) {
+  #services-section,
+  #staff-section {
+    padding: 4rem 2rem;
+  }
+  #about-section,
+  #offer-section,
+  #lookbook-section {
+    padding: 3rem;
+  }
+  #top-section .coupon {
+    width: 35%;
+  }
+  #about-section div {
+    width: 100%;
+    float: none;
+  }
+  #about-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 3rem auto;
+  }
+}
+
 @media screen and (max-width: 450px) {
   h1 {
     font-size: 5rem;
@@ -285,11 +323,14 @@ header button {
   #top-section {
     padding: 1rem;
   }
-  #top-section > div {
+  #top-section > section {
+    margin-top: 1rem;
+  }
+  #top-section div {
     width: 100%;
   }
   #top-section .coupon {
-    width: 50%;
+    width: 60%;
   }
   #top-section .vertical-text {
     top: 50%;
@@ -302,27 +343,5 @@ header button {
   #staff-section > section {
     width: 100%;
     float: none;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  #services-section,
-  #staff-section {
-    padding: 4rem 2rem;
-  }
-  #about-section,
-  #offer-section,
-  #lookbook-section {
-    padding: 3rem;
-  }
-  #about-section div {
-    width: 100%;
-    float: none;
-  }
-  #about-section img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 3rem auto;
   }
 }
