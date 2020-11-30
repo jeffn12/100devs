@@ -173,14 +173,15 @@ header label {
   font-size: 4rem;
   font-weight: 400;
   margin: 0 0 1rem 0;
+  line-height: 5rem;
 }
 #about-section p {
   margin: 2rem 0;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
 }
 #about-section img {
-  width: 50%;
+  width: 45%;
   height: auto;
 }
 
@@ -204,7 +205,7 @@ header label {
   position: relative;
   width: 90%;
   left: 5%;
-  bottom: 3rem;
+  bottom: 4.5rem;
   padding: 1rem;
   background: black;
   text-align: center;
