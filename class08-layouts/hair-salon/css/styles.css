@@ -63,11 +63,21 @@ header a {
   color: black;
 }
 header li {
+  display: inline;
   padding: 0 1rem;
 }
 header button {
   line-height: 1rem;
   float: right;
+}
+header label {
+  font-size: 1.5rem;
+  line-height: 4rem;
+  float: right;
+}
+header input,
+header label {
+  display: none;
 }
 
 /******************************************
@@ -347,6 +357,38 @@ header button {
 }
 
 @media screen and (max-width: 450px) {
+  header {
+    padding: 0 2rem;
+    position: relative;
+  }
+  header ul {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  header label {
+    padding: 0.2rem 0;
+    display: unset;
+    cursor: pointer;
+  }
+  header li {
+    width: 100%;
+    float: right;
+    display: block;
+    visibility: hidden;
+    background: rgb(246, 246, 246);
+    border-bottom: 0.1rem solid black;
+  }
+  header .btn {
+    margin-right: 2rem;
+    padding-right: 2.5rem;
+    border-right: 0.1rem solid rgb(200, 200, 200);
+  }
+  #toggle:checked ~ nav li {
+    visibility: unset;
+  }
   h1 {
     font-size: 5rem;
   }
