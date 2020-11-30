@@ -284,7 +284,7 @@ header label {
   top: 1.5%;
   left: 2%;
   right: 2%;
-  bottom: 2%;
+  bottom: 2.5%;
   background: black;
   opacity: 0.9;
   font-size: 27rem;
@@ -354,6 +354,7 @@ header label {
   }
   #lookbook-section div.active:before {
     font-size: 20rem;
+    bottom: 3.25%;
   }
 }
 
@@ -425,5 +426,6 @@ header label {
   }
   #lookbook-section div.active:before {
     font-size: 9rem;
+    bottom: 6.5%;
   }
 }
