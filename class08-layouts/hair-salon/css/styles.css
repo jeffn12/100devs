@@ -23,6 +23,10 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Cinzel", serif;
+}
+p {
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
 }
 a {
   text-decoration: none;
@@ -32,7 +36,16 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  margin: 0;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
 /******************************************
 /* Header
 /*******************************************/
@@ -42,7 +55,6 @@ header {
   line-height: 4rem;
   text-align: center;
   background: white;
-  font-family: "Cinzel", serif;
 }
 header img {
   float: left;
@@ -59,6 +71,45 @@ header button {
 }
 
 /******************************************
+/* 'Above the Fold'
+/*******************************************/
+#top-section {
+  position: relative;
+  background: black;
+  color: white;
+  padding: 14rem 0 0 10rem;
+}
+#top-section > div {
+  width: 50%;
+  margin: 3rem 0;
+  padding: 3rem 0;
+}
+#top-section .vertical-text {
+  position: absolute;
+  right: -4.5rem;
+  top: 40%;
+  transform: rotateZ(90deg);
+}
+#top-section .coupon {
+  width: 20%;
+  background: purple;
+  padding: 1rem 0;
+}
+#top-section .coupon h4 {
+  border-left: 3px solid white;
+  padding: 2rem;
+  margin: 0;
+}
+#top-section .coupon p {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  margin: 0;
+  line-height: 3rem;
+}
+#top-section .btn {
+  margin: 2rem 2rem;
+}
+/******************************************
 /* Utility Classes
 /*******************************************/
 .inline {
@@ -72,5 +123,33 @@ header button {
 .btn-white {
   background: white;
   color: black;
+}
+.btn-black {
+  background: black;
+  color: white;
+}
+.coupon span {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.coupon p {
   font-family: "Cinzel", serif;
+}
+
+/******************************************
+/* Mobile Responsiveness
+/*******************************************/
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  #top-section {
+    padding: 1rem;
+  }
+  #top-section > div {
+    width: 100%;
+  }
 }
