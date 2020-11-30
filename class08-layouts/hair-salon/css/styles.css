@@ -184,4 +184,18 @@ header button {
   #top-section > div {
     width: 100%;
   }
+  #top-section .coupon {
+    width: 50%;
+  }
+  #top-section .vertical-text {
+    top: 50%;
+  }
+  #services {
+    padding: 1rem;
+  }
+  #services > section {
+    float: none;
+    width: 80%;
+    margin: auto;
+  }
 }
