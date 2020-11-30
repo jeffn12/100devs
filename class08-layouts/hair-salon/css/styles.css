@@ -264,6 +264,22 @@ header button {
   height: auto;
   padding: 0.5rem;
 }
+#lookbook-section div {
+  position: relative;
+}
+#lookbook-section div.active:before {
+  content: "+";
+  position: absolute;
+  top: 1.5%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
+  background: black;
+  opacity: 0.9;
+  font-size: 27rem;
+  color: rgba(200, 200, 200, 0.4);
+  z-index: 1;
+}
 
 /******************************************
 /* Utility Classes
@@ -325,6 +341,9 @@ header button {
     display: block;
     margin: 3rem auto;
   }
+  #lookbook-section div.active:before {
+    font-size: 20rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -360,5 +379,8 @@ header button {
   }
   #offer-section div:before {
     background-size: contain;
+  }
+  #lookbook-section div.active:before {
+    font-size: 9rem;
   }
 }
