@@ -95,16 +95,10 @@ header button {
   background: purple;
   padding: 1rem 0;
 }
-#top-section .coupon h4 {
+.coupon h4 {
   border-left: 3px solid white;
   padding: 2rem;
   margin: 0;
-}
-#top-section .coupon p {
-  font-size: 1.5rem;
-  padding: 0 2rem;
-  margin: 0;
-  line-height: 3rem;
 }
 #top-section .btn {
   margin: 2rem 2rem;
@@ -196,6 +190,29 @@ header button {
   color: white;
   line-height: 2rem;
 }
+
+/******************************************
+/* Offer Section
+/*******************************************/
+#offer-section {
+  padding: 4rem 15rem;
+}
+#offer-section div {
+  background: rgb(243, 244, 246);
+  padding: 8rem 6rem;
+}
+#offer-section h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+#offer-section .coupon p {
+  font-size: 2rem;
+  padding-left: 0;
+  margin: 2rem 0;
+  line-height: 3.5rem;
+}
+
 /******************************************
 /* Utility Classes
 /*******************************************/
@@ -218,9 +235,14 @@ header button {
 .coupon span {
   font-weight: 700;
   font-size: 3rem;
+  margin-right: 1rem;
 }
 .coupon p {
   font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  margin: 0;
+  line-height: 3rem;
 }
 
 /******************************************
@@ -261,7 +283,8 @@ header button {
   #staff-section {
     padding: 4rem 2rem;
   }
-  #about-section {
+  #about-section,
+  #offer-section {
     padding: 3rem;
   }
   #about-section div {
