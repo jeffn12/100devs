@@ -214,6 +214,33 @@ header button {
 }
 
 /******************************************
+/* Lookbook
+/*******************************************/
+#lookbook-section {
+  padding: 4rem 15rem;
+  text-align: center;
+}
+#lookbook-section h2,
+#lookbook-section span {
+  font-size: 3.5rem;
+  font-weight: 400;
+  display: block;
+  margin: 1rem;
+}
+#lookbook-section span {
+  margin-bottom: 2rem;
+}
+#lookbook-section .column {
+  width: 33.333%;
+  float: left;
+}
+#lookbook-section img {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+/******************************************
 /* Utility Classes
 /*******************************************/
 .inline {
@@ -284,7 +311,8 @@ header button {
     padding: 4rem 2rem;
   }
   #about-section,
-  #offer-section {
+  #offer-section,
+  #lookbook-section {
     padding: 3rem;
   }
   #about-section div {
