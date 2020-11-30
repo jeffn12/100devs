@@ -91,7 +91,7 @@ header button {
   transform: rotateZ(90deg);
 }
 #top-section .coupon {
-  width: 20%;
+  width: 25%;
   background: purple;
   padding: 1rem 0;
 }
@@ -108,6 +108,38 @@ header button {
 }
 #top-section .btn {
   margin: 2rem 2rem;
+}
+
+/******************************************
+/* Services
+/*******************************************/
+#services {
+  padding: 4rem 16rem;
+}
+#services > section {
+  width: 33.333%;
+  padding: 4rem;
+  float: left;
+  text-align: center;
+  line-height: 2rem;
+}
+#services i {
+  font-size: 4rem;
+  position: relative;
+}
+#services i:after {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  background: rgba(200, 200, 200, 0.4);
+  border-radius: 50%;
+  z-index: -1;
+}
+#services h2 {
+  font-weight: 600;
 }
 /******************************************
 /* Utility Classes
