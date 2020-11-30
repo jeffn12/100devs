@@ -141,6 +141,7 @@ header button {
 #services h2 {
   font-weight: 600;
 }
+
 /******************************************
 /* About Us
 /*******************************************/
@@ -166,6 +167,34 @@ header button {
 #about-section img {
   width: 50%;
   height: auto;
+}
+
+/******************************************
+/* Staff
+/*******************************************/
+#staff-section {
+  padding: 5rem 15rem;
+}
+#staff-section > section {
+  width: 33.333%;
+  float: left;
+  padding: 0 1rem;
+  position: relative;
+}
+#staff-section img {
+  width: 100%;
+  height: auto;
+}
+#staff-section div {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  bottom: 3rem;
+  padding: 1rem;
+  background: black;
+  text-align: center;
+  color: white;
+  line-height: 2rem;
 }
 /******************************************
 /* Utility Classes
@@ -221,11 +250,16 @@ header button {
     width: 80%;
     margin: auto;
   }
+  #staff-section > section {
+    width: 100%;
+    float: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  #services {
-    padding: 2rem;
+  #services,
+  #staff-section {
+    padding: 4rem 2rem;
   }
   #about-section {
     padding: 3rem;
