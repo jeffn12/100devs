@@ -142,6 +142,32 @@ header button {
   font-weight: 600;
 }
 /******************************************
+/* About Us
+/*******************************************/
+#about-section {
+  padding: 5rem 15rem;
+  background: rgb(243, 244, 246);
+}
+#about-section div {
+  width: 50%;
+  float: left;
+  padding-right: 5rem;
+}
+#about-section h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+#about-section p {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+#about-section img {
+  width: 50%;
+  height: auto;
+}
+/******************************************
 /* Utility Classes
 /*******************************************/
 .inline {
@@ -190,12 +216,28 @@ header button {
   #top-section .vertical-text {
     top: 50%;
   }
-  #services {
-    padding: 1rem;
-  }
   #services > section {
     float: none;
     width: 80%;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #services {
+    padding: 2rem;
+  }
+  #about-section {
+    padding: 3rem;
+  }
+  #about-section div {
+    width: 100%;
+    float: none;
+  }
+  #about-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 3rem auto;
   }
 }
