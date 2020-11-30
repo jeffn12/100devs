@@ -208,8 +208,22 @@ header button {
 #offer-section {
   padding: 4rem 15rem;
 }
+#offer-section div:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, transparent, rgb(246, 246, 246) 70%),
+    url("https://images.unsplash.com/photo-1542276677-0764c122aef0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80")
+      center center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  transform: rotateY(180deg);
+}
 #offer-section div {
-  background: rgb(243, 244, 246);
+  position: relative;
   padding: 8rem 6rem;
 }
 #offer-section h2 {
@@ -343,5 +357,8 @@ header button {
   #staff-section > section {
     width: 100%;
     float: none;
+  }
+  #offer-section div:before {
+    background-size: contain;
   }
 }
