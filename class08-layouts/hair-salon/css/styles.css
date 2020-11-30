@@ -113,21 +113,21 @@ header button {
 /******************************************
 /* Services
 /*******************************************/
-#services {
+#services-section {
   padding: 4rem 16rem;
 }
-#services > section {
+#services-section > section {
   width: 33.333%;
   padding: 4rem;
   float: left;
   text-align: center;
   line-height: 2rem;
 }
-#services i {
+#services-section i {
   font-size: 4rem;
   position: relative;
 }
-#services i:after {
+#services-section i:after {
   content: "";
   width: 4rem;
   height: 4rem;
@@ -138,7 +138,7 @@ header button {
   border-radius: 50%;
   z-index: -1;
 }
-#services h2 {
+#services-section h2 {
   font-weight: 600;
 }
 
@@ -245,7 +245,7 @@ header button {
   #top-section .vertical-text {
     top: 50%;
   }
-  #services > section {
+  #services-section > section {
     float: none;
     width: 80%;
     margin: auto;
@@ -257,7 +257,7 @@ header button {
 }
 
 @media screen and (max-width: 800px) {
-  #services,
+  #services-section,
   #staff-section {
     padding: 4rem 2rem;
   }
