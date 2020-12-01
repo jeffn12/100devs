@@ -17,12 +17,6 @@
   clear: both;
 }
 
-.relative-container {
-  display: inline;
-  position: relative;
-  z-index: -1;
-}
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -491,6 +485,9 @@ div#rating i {
   }
   #welcome form {
     width: 100%;
+  }
+  #socials {
+    width: 70%;
   }
   #about-us::before {
     background-image: linear-gradient(
