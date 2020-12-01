@@ -113,6 +113,7 @@ nav a {
 }
 #welcome form {
   margin: 2rem 0;
+  width: 60%;
   max-width: 50rem;
 }
 #welcome form i {
@@ -123,7 +124,7 @@ nav a {
   color: gray;
 }
 #welcome input {
-  width: 60%;
+  width: 75%;
   height: 3rem;
   margin: 0;
   padding: 0 3rem;
@@ -133,7 +134,7 @@ nav a {
   border-radius: 0.5rem 0 0 0.5rem;
 }
 #welcome button {
-  width: 15%;
+  width: 25%;
   margin: -0.3rem;
   background: var(--darkorange);
   color: white;
@@ -226,10 +227,10 @@ span.section-title {
   padding: 1rem 0.75rem;
   background: var(--lightorange);
   border: 1px solid var(--lightorange);
-  box-shadow: 0 0 0.2rem var(--lightorange);
+  box-shadow: 0 0 var(--lightorange);
   border-radius: 0 0.5rem 0.5rem 0;
   position: absolute;
-  right: -25%;
+  right: -2.5rem;
   top: -0.1rem;
   bottom: -0.1rem;
   z-index: -1;
@@ -432,4 +433,22 @@ div#rating i {
   margin: 2rem 0.25rem;
   font-size: 1.5rem;
   color: gold;
+}
+
+/******************************************
+/* Responsiveness
+/*******************************************/
+@media screen and (max-width: 680px) {
+}
+
+@media screen and (max-width: 450px) {
+  header::before {
+    opacity: 0.2;
+  }
+  #welcome {
+    width: 100%;
+  }
+  #welcome form {
+    width: 100%;
+  }
 }
