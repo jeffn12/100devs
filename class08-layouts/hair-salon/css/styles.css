@@ -362,8 +362,8 @@ header label {
     bottom: 3.25%;
   }
 }
-/*** Phone ***/
-@media screen and (max-width: 450px) {
+/*** Collapse Menu ***/
+@media screen and (max-width: 680px) {
   header ul {
     position: absolute;
     top: 4rem;
@@ -392,6 +392,10 @@ header label {
   #toggle:checked ~ nav li {
     visibility: unset;
   }
+}
+
+/*** Phone ***/
+@media screen and (max-width: 450px) {
   h1 {
     font-size: 5rem;
   }
