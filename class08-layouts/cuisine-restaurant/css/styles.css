@@ -466,4 +466,46 @@ div#rating i {
   #about-us button {
     width: 50%;
   }
+  #menu-list {
+    width: 100%;
+    text-align: center;
+  }
+  #menu-list li {
+    font-size: 1.1rem;
+  }
+  #menu-items li {
+    display: block;
+    width: 75%;
+    margin: auto;
+  }
+  #menu-items img {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .selectors span.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  .selectors span.dot.active {
+    width: 1rem;
+    height: 1rem;
+  }
+  #book-table div#hours {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  #book-table div#hours div {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  #book-table div#hours div:nth-child(2) {
+    float: none;
+    padding: 0;
+  }
+  div#video {
+    width: 100%;
+  }
 }
