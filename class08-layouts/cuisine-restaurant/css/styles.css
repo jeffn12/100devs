@@ -451,4 +451,19 @@ div#rating i {
   #welcome form {
     width: 100%;
   }
+  #about-us::before {
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        var(--bluegray) 40%
+      ),
+      url("https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1047&q=80");
+  }
+  #about-us > div {
+    width: 90%;
+    margin-right: 0;
+  }
+  #about-us button {
+    width: 50%;
+  }
 }
