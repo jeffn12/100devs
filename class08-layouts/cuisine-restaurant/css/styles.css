@@ -20,6 +20,7 @@
 .relative-container {
   display: inline;
   position: relative;
+  z-index: -1;
 }
 
 /******************************************
@@ -70,6 +71,14 @@ header::before {
   background-size: cover;
 }
 /*** NavBar ***/
+#toggle {
+  display: none;
+}
+nav label {
+  font-size: 2rem;
+  float: right;
+  display: none;
+}
 nav {
   height: 4rem;
   position: fixed;
@@ -105,6 +114,7 @@ nav a {
 #welcome {
   padding: 6rem 0;
   width: 66.666%;
+  z-index: -10;
 }
 #welcome h1 {
   font-size: 5rem;
@@ -115,6 +125,11 @@ nav a {
   margin: 2rem 0;
   width: 60%;
   max-width: 50rem;
+}
+#welcome form > div {
+  display: inline;
+  position: relative;
+  z-index: -1;
 }
 #welcome form i {
   position: absolute;
@@ -132,6 +147,7 @@ nav a {
   border: 1px solid rgb(238, 240, 245);
   box-shadow: 0 0 0.1rem;
   border-radius: 0.5rem 0 0 0.5rem;
+  z-index: -1000;
 }
 #welcome button {
   width: 25%;
@@ -176,6 +192,7 @@ span.section-title {
 #about-us {
   position: relative;
   padding-bottom: 8rem;
+  z-index: -1;
 }
 #about-us:before {
   content: "";
@@ -299,6 +316,7 @@ span.section-title {
   text-align: center;
   position: relative;
   padding-bottom: 8rem;
+  z-index: -1;
 }
 #book-table:before {
   content: "";
@@ -385,6 +403,7 @@ div#video video {
   text-align: center;
   position: relative;
   margin-bottom: 0;
+  z-index: -1;
 }
 #testimonials:before {
   content: '"';
@@ -439,6 +458,28 @@ div#rating i {
 /* Responsiveness
 /*******************************************/
 @media screen and (max-width: 680px) {
+  nav ul {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  nav label {
+    margin: 0.3rem 2rem;
+    display: unset;
+    cursor: pointer;
+  }
+  nav li {
+    width: 100%;
+    display: block;
+    visibility: hidden;
+    background: var(--bluegray);
+    border-bottom: 0.1rem solid black;
+  }
+  #toggle:checked ~ ul li {
+    visibility: unset;
+  }
 }
 
 @media screen and (max-width: 450px) {
