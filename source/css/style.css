@@ -60,6 +60,16 @@ header {
   margin-bottom: 8rem;
   text-align: center;
 }
+header input[type="checkbox"] {
+  display: none;
+}
+header label {
+  display: none;
+  font-size: 3rem;
+  font-weight: 700;
+  float: right;
+  cursor: pointer;
+}
 nav,
 nav li,
 nav ul {
@@ -89,6 +99,7 @@ header button {
 /******************/
 #call-to-action-section {
   position: relative;
+  z-index: -1;
 }
 #call-to-action-section:before {
   content: "";
@@ -191,6 +202,37 @@ header button {
 /*******************************************/
 @media screen and (max-width: 650px) {
   /*** Collapse Menu ***/
+  header label {
+    display: unset;
+  }
+  nav {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    right: 0;
+  }
+  nav ul {
+    visibility: hidden;
+  }
+  nav li {
+    display: block;
+    width: 100%;
+    background: var(--lightgray);
+    border-bottom: 0.1rem solid var(--darkgray);
+  }
+  header button {
+    display: none;
+  }
+  #toggle:checked ~ nav ul {
+    visibility: unset;
+  }
+  #toggle:checked ~ label {
+    transform: rotate(-45deg);
+    transition: 0.3s;
+  }
+  #toggle:not(:checked) ~ label {
+    transition: 0.3s;
+  }
 }
 
 @media screen and (max-width: 450px) {
