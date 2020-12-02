@@ -33,7 +33,6 @@ body {
   background: var(--lightgray);
   color: var(--darknavy);
   font-family: "Assistant", Arial, Helvetica, sans-serif;
-  min-width: 850px;
 }
 svg {
   width: 20%;
@@ -83,27 +82,34 @@ nav button {
 /******************************************
 /* Main
 /*******************************************/
-main {
-  position: relative;
-}
 /******************
 /* Call to Action
 /******************/
 #call-to-action-section {
-  width: 50%;
-  float: left;
+  position: relative;
+}
+#call-to-action-section:before {
+  content: "";
+  background: url("../iphone_laptop.png") 100% 100% no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -2.5rem;
+  right: -5rem;
+  bottom: -2.5rem;
+  left: 0;
+  z-index: -1;
 }
 #call-to-action-section span {
   font-weight: 700;
   color: rgb(197, 208, 216);
 }
 #call-to-action-section h1 {
-  width: 70%;
+  width: 40%;
   font-size: 3.5rem;
   font-weight: 600;
 }
 #call-to-action-section input {
-  width: 60%;
+  width: 30%;
   line-height: 3.5rem;
   margin: 0 0.1rem;
   padding-left: 1rem;
@@ -111,19 +117,12 @@ main {
   border: none;
 }
 #call-to-action-section p {
-  width: 70%;
+  width: 35%;
   margin: 2rem 0;
   line-height: 2rem;
   font-size: 1.3rem;
 }
-main > img {
-  position: absolute;
-  top: -2rem;
-  right: -5rem;
-  width: 60%;
-  height: auto;
-  max-height: 37rem;
-}
+
 /******************
 /* Features
 /******************/
@@ -184,3 +183,7 @@ main > img {
   margin: 4rem 0;
   background: var(--darkgray);
 }
+
+/******************************************
+/* Media Queries
+/*******************************************/
