@@ -197,7 +197,11 @@ nav button {
     right: -20rem;
     top: 0;
   }
-  #call-to-action-section h1 {
+  #call-to-action-section h1,
+  #call-to-action-section p,
+  #features-section > section,
+  #process-section h2,
+  #process-section p {
     width: 100%;
   }
   #call-to-action-section input {
