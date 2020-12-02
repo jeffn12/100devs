@@ -187,3 +187,12 @@ nav button {
 /******************************************
 /* Media Queries
 /*******************************************/
+@media screen and (max-width: 650px) {
+  /*** Collapse Menu ***/
+}
+
+@media screen and (max-width: 450px) {
+  #features-section > section {
+    width: 100%;
+  }
+}
