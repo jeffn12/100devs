@@ -93,7 +93,7 @@ nav button {
   background: url("../iphone_laptop.png") 100% 100% no-repeat;
   background-size: contain;
   position: absolute;
-  top: -2.5rem;
+  top: 0;
   right: -5rem;
   bottom: -2.5rem;
   left: 0;
@@ -192,6 +192,20 @@ nav button {
 }
 
 @media screen and (max-width: 450px) {
+  #call-to-action-section:before {
+    opacity: 0.5;
+    right: -20rem;
+    top: 0;
+  }
+  #call-to-action-section h1 {
+    width: 100%;
+  }
+  #call-to-action-section input {
+    width: 60%;
+  }
+  #call-to-action-section p {
+    width: 100%;
+  }
   #features-section > section {
     width: 100%;
   }
