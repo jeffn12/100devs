@@ -1,6 +1,7 @@
-document.querySelector('#finalRose').addEventListener('click', /*INSERTCODE*/)
+document.querySelector("#finalRose").addEventListener("click", hide);
 
-function hide(){
-	document.querySelector(/*INSERTCODE*/).style.display = 'none'
-	document.querySelector(/*INSERTCODE*/).style.display = 'none'
+function hide(e) {
+  e.target.innerText += " goes to Sharleen!";
+  document.querySelector("#nikki").style.display = "none";
+  document.querySelector("#claire").style.display = "none";
 }
