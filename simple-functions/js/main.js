@@ -11,9 +11,14 @@ function add(...rest) {
   return sum;
 }
 //create a function that multiplys three numbers and console logs the product
+function multiplyThreeNumbers(x, y, z) {
+  const product = x * y * z;
+  console.log(product);
+}
 
 //create a function that divides two numbers and returns the ???
 
 // Test Cases, uncomment to test
 
 //addTwoNumbers(5, 6);
+//multiplyThreeNumbers(5, 6, 8);
