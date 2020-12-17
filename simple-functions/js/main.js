@@ -17,8 +17,12 @@ function multiplyThreeNumbers(x, y, z) {
 }
 
 //create a function that divides two numbers and returns the ???
+function divideTwoNumbers(dividend, divisor) {
+  return dividend / divisor;
+}
 
 // Test Cases, uncomment to test
 
 //addTwoNumbers(5, 6);
 //multiplyThreeNumbers(5, 6, 8);
+//console.log(divideTwoNumbers(15, 5));
