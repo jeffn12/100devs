@@ -18,9 +18,17 @@ function subtractFourNumbers(minuend, x, y, z) {
 function getRemainder(dividend, divisor) {
   return dividend % divisor;
 }
-console.log(getRemainder(209, 23));
+//console.log(getRemainder(209, 23));
 
 // *Conditionals*
 // Create a function that adds two numbers and if the sum is greater than 50 alert Jumanji
+function isSumGreaterThan50(x, y) {
+  x + y > 50 && alert('Jumanji');
+}
+//isSumGreaterThan50(25, 60);
 
 // Create a function that multiplys three numbers and if the product is divisible by 3 alert ZEBRA
+function isProductDivisibleBy3(x, y, z) {
+  (x * y * z) % 3 === 0 && alert('ZEBRA');
+}
+//isProductDivisibleBy3(3, 2, 6);
