@@ -13,7 +13,9 @@ The master branch will have the most recent week's content, and it will be moved
 - [Class 5](https://github.com/jeffn12/100devs/tree/05/css-practice) - CSS Review & Practice
 - [Class 6](https://github.com/jeffn12/100devs/tree/06/responsive-css-basics) - Responsive CSS Basics
 - [Class 7/8](https://github.com/jeffn12/100devs/tree/07-08/responsive-css-practice) - Responsive CSS Review & Practice
-- [Class 9]() - JavaScript Basics
+- [Class 9/10/11](https://github.com/jeffn12/100devs/tree/09-11/basic-javascript) - JavaScript Basics
+- [Class 12]() - Freelancing 101
+- [Class 13]() - More JavaScript (Review & Loops)
 
 #### Thanks
 
